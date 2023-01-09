@@ -1,6 +1,6 @@
 # Minidump-Generator
 
-This is minidump generator for arbitrary queries.
+This is a minidump generator for arbitrary queries.
 
 ## Usage
 
@@ -28,6 +28,6 @@ For example
 ./runner.sh 127.0.0.1 postgres gpadmin gpadmin
 ```
 
-`runner.sh` will generate minidump files with xmlint and query execution results in `results` folder.
+`runner.sh` will generate minidump files with/without xmlint and query execution results in `results` folder.
 
-`results/raw_minidumps` contains raw minidump files without xmlint, while `results/minidumps` contains preprocessed minidump files.
+`results/raw_minidumps` contains raw minidump files without xmlint, while `results/minidumps` contains minidump files with xmllint.
