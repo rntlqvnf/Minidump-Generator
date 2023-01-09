@@ -19,13 +19,13 @@ For example
 To run generated sql files:
 
 ```
-./runner.sh <host> <dbname> <user> <password> 
+./runner.sh <host> <dbname> <user> <password> <benchmark name>
 ```
 
 For example
 
 ```
-./runner.sh 127.0.0.1 postgres gpadmin gpadmin
+./runner.sh 127.0.0.1 postgres gpadmin gpadmin TPCH
 ```
 
 `runner.sh` will generate minidump files with/without xmlint and query execution results in `results` folder.

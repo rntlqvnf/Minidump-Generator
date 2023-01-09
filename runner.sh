@@ -2,6 +2,7 @@ HOST=$1
 DBNAME=$2
 USER=$3
 PWD=$4
+BENCHNAME=$5
 
 CURRENT_DIR=${MASTER_DATA_DIRECTORY}/minidumps
 get_recent_file () {
@@ -39,5 +40,5 @@ echo "Running xmllint..."
 for file in ./results/raw_minidumps/*
 do
     file_name=$(basename $file .mdp)
-    xmllint --format $file > ./results/minidumps/${file_name}.mdp
+    xmllint --format $file > ./results/minidumps/${BENCHNAME}_${file_name}.mdp
 done
